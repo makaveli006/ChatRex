@@ -1,38 +1,65 @@
 # Chatbot_With_UI
 
-Simple chatbot with a flask web interface.
+A simple chatbot with a Flask web interface, designed to provide dynamic responses using OpenAI's API for language understanding. This chatbot integrates retrieval-augmented generation (RAG) to ensure up-to-date responses, leveraging current information from external sources like the LHC Blogpost.
 
-The chatbot leverages OpenAI API for user query comprehension complemented with RAG for up-to-date information retrieval.
+### Tools Used
+1. **LangChain Framework**: For query synthesis and response generation
+2. **Flask**: Provides the web GUI
+3. **GPT-3.5**: Powers natural language understanding
+4. **LHC Blogpost**: Used for real-time information retrieval ([link to source](https://www.space.com/large-hadron-collider-particle-accelerator))
 
-Tools Used: 
-  1. LangChain framework: for user query synthesis and reply generation
-  2. Flask: for web gui
-  3. GPT-3.5: for language understanding
-  4. LHC Blogpost: for current information retrieval; [Link](https://www.space.com/large-hadron-collider-particle-accelerator)
+---
 
-<br>
+### **Steps to Run**
 
+1. **Download the Repository**
+   - Clone or download this GitHub repository to your local machine.
 
-### **Steps to run:**
+2. **Create a Virtual Environment**
+   - Run the following command:
+     ```bash
+     python -m venv venv
+     ```
 
-1. Download this github repository
-2. Create a virtual environment
+3. **Activate the Virtual Environment**
+   - For Linux/macOS:
+     ```bash
+     source venv/bin/activate
+     ```
+   - For Windows:
+     ```bash
+     venv/Scripts/activate
+     ```
 
-     `python -m venv venv`
-3. Activate the virtual environment
+4. **Install Dependencies**
+   - Install all necessary packages by running:
+     ```bash
+     pip install -r requirements.txt
+     ```
 
-    `source venv/bin/activate` or `venv/Scripts/activate` [for Windows]
+5. **Add OpenAI API Key**
+   - In the project root, create a `.env` file and add your OpenAI API key in the following format:
+     ```
+     OPENAI_API_KEY=your_openai_api_key
+     ```
 
-4. Install the requirements
+6. **Run the Application**
+   - Launch the Flask app by executing:
+     ```bash
+     python app.py
+     ```
 
-   `pip install -r requirements.txt`
+7. **Access the Application**
+   - The app should now be accessible in your web browser. Make sure it is running on a custom port to avoid conflicts with the default localhost port.
 
-5. Add your OpenAI API key in a .env file
-6. On the terminal run the command below 
+---
 
-     `python app.py`
+### **Additional Notes**
 
-7. App should not be running on localhost default port
+- Ensure that all required permissions and network settings allow for the app to run and retrieve data as needed.
+- Review and modify `app.py` if necessary to set a specific port or additional configurations.
+
+---
 
 <br>
 
