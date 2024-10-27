@@ -37,5 +37,5 @@ Tools Used:
 <br>
 
 <p align="center">
-<img align="center" width="725" alt="no-image" src="" >
+<img align="center" width="725" alt="no-image" src="https://github.com/makaveli006/ChatRex/blob/f517271f9d157fdcb6cd4162f5676dc57729d673/assets/chatbox.png" >
 </p>
